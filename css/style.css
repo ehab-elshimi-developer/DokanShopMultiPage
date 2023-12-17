@@ -1,0 +1,212 @@
+:root {
+  --first-color: #fff;
+  --second-color: #343a40;
+  --third-color: #cd5c5c;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* utilities */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+/* end utilities */
+
+/* start navbar section */
+.navbar .navbar-nav .nav-link {
+  color: var(--first-color);
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--third-color) !important;
+}
+
+.navbar .navbar-nav .nav-link.active:hover {
+  color: var(--first-color) !important;
+  text-transform: uppercase !important;
+  transform: scale(.8);
+  gap: 4;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  text-transform: uppercase;
+  background-color: var(--third-color);
+  border-radius: 18%;
+  transform: scale(0.8);
+  gap: 4;
+  font-weight: bold;
+}
+
+.navbar .dropdown-menu {
+  color: var(--first-color);
+  background-color: var(--second-color);
+}
+
+.navbar .dropdown-menu li {
+  overflow-x: hidden;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: var(--third-color);
+
+}
+
+.navbar .dropdown-menu li:hover span {
+  display: inline-block;
+  transform: translateX(10px);
+  transition: all 0.7s;
+  text-transform: uppercase;
+}
+
+.navbar .dropdown-menu .dropdown-divider {
+  background-color: var(--third-color);
+}
+
+/* end navbar section */
+
+/* start carousel section*/
+
+.carousel-item {
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .carousel-item {
+    height: calc(100vh - 72.8px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 100%;
+  }
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-dark .carousel-indicators [data-bs-target].active {
+  background-color: var(--third-color);
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #8b8b8b;
+}
+
+/* end carousel section */
+
+/* start products section  */
+.card .actions a i:hover {
+  color: var(--third-color) !important;
+}
+
+.card .card-body a {
+  background-color: var(--third-color);
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+}
+
+.card .card-body a:hover {
+  transform: scale(1.2);
+}
+
+/* end products section */
+
+/* start deals section */
+.deals .deals-content .card {
+  transition: 0.5s linear;
+}
+
+.deals .deals-content .card .deals-p {
+  position: absolute;
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s linear;
+  background-color: var(--third-color);
+  color: var(--first-color);
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.deals .deals-content .card:hover .deals-p {
+  transform: scale(.8);
+  transition: 0.5s linear;
+
+}
+
+/* end deals section */
+
+/* start feedback section  */
+.feedback form input:focus,
+.feedback form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: .5px solid #4F4F4F;
+}
+
+.feedback form input,
+.feedback form textarea {
+  border: .5px solid #4F4F4F;
+}
+
+
+.feedback .feedback-title p {
+  letter-spacing: 3px;
+}
+
+/* end feedback section  */
+
+/* start footer section  */
+.footer {
+  background-color: var(--second-color);
+}
+
+.footer h1 {
+  font-size: 21px;
+}
+
+.footer ul li a {
+  font-size: 14px;
+}
+
+.footer ul li a:hover {
+  color: var(--third-color) !important;
+}
+
+.footer hr {
+  color: var(--first-color);
+}
+
+.footer-bottom p {
+  letter-spacing: 1px;
+}
+/* end footer section  */

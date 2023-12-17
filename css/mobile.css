@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+    /* carousel */
+    .carousel {
+        height: auto;
+    }
+    /* deals */
+    .top-deal {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2em;
+    }
+    /* feedback */
+    .feedback-content>.row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-content .contacts-details {
+        text-align: center;
+    }
+
+    .feedback form button {
+        width: 100%;
+    }
+    /* footer */
+    .footer .dokkan-footer-logo {
+        justify-content: center;
+    }
+}

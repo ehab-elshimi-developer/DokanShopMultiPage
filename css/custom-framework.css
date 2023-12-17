@@ -1,0 +1,51 @@
+/* start framework Or Utilities*/
+/* colors custom classes */
+.custom-first-color {
+    color: #fff;
+}
+
+.custom-second-color {
+    color: #343a40;
+}
+
+.custom-third-color {
+    color: #cd5c5c;
+}
+
+/* font custom classes */
+.custom-section-title {
+    font-size: 3.7em;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 2px;
+}
+
+.f-title-head {
+    font-size: 3.2em;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.f-title-desc {
+    font-weight: 600;
+    font-size: 1em;
+    font-style: normal;
+    color: #777777;
+}
+
+.f-para-head {
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.f-para-desc {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+.spacer {
+    height: 2.5em;
+}
+
+/* end framework */
